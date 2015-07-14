@@ -4,7 +4,7 @@
   "description": "node-sdk of YunLai's open platform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
   "homepage": "https://github.com/plusmancn/ylauth-node-sdk#readme",
   "dependencies": {
     "js-base64": "^2.1.8",
-    "node-rsa": "^0.2.24"
+    "node-rsa": "^0.2.24",
+    "request": "^2.58.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
