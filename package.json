@@ -1,0 +1,27 @@
+{
+  "name": "ylauth-node-sdk",
+  "version": "1.0.0",
+  "description": "node-sdk of YunLai's open platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plusmancn/ylauth-node-sdk.git"
+  },
+  "keywords": [
+    "YunLai",
+    "ligthApp",
+    "node-sdk"
+  ],
+  "author": "plusmancn@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plusmancn/ylauth-node-sdk/issues"
+  },
+  "homepage": "https://github.com/plusmancn/ylauth-node-sdk#readme",
+  "dependencies": {
+    "js-base64": "^2.1.8"
+  }
+}
