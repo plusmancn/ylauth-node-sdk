@@ -8,8 +8,9 @@ var sign = require('../lib/sign.js');
  * appkey=yunlai&email=yunlai@gmail.com&loginName=yunlai&phone=13811112222&requsetTime=1436855651
  * ```
  */
-var blankText = 'appkey=yunlai&email=yunlai@gmail.com&loginName=yunlai&phone=13811112222&requsetTime=1436855651';
-var pemPrivate = './config/certi/rsa_private_key_pkcs8_yl.pem';
+// var blankText = 'appkey=yunlai&email=yunlai@gmail.com&loginName=yunlai&phone=13811112222&requsetTime=1436855651';
+var blankText = 'aaa';
+var pemPrivate = './config/certi/rsa_private_key_pkcs8.pem';
 var pemPublic = './config/certi/rsa_public_key_yl.pem';
 
 describe('sign',function(){
@@ -21,6 +22,7 @@ describe('sign',function(){
   describe('sign#sign',function(){
     it('should return 签名字符串',function(){
       signResult = sign.sign(blankText,pemPrivate);
+      console.log(signResult);
       expect(signResult).to.be.a('string');
     });
   });
@@ -33,5 +35,6 @@ describe('sign',function(){
       expect(verifyResult).to.be(true);
     });
   });
+
 
 });

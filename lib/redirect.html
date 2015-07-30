@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <title>submit</title>
+ </head>
+ <body>
+  <form action="http://www.liveapp.cn/BI_Web/liveapp/openapi/partner/v1/linkin" id="linkinsubmit" method="POST">
+   <input type="hidden" name="loginName" value="%s" />
+   <input type="hidden" name="phone" value="%s" />
+   <input type="hidden" name="email" value="%s" />
+   <input type="hidden" name="appkey" value="%s" />
+   <input type="hidden" name="requsetTime" value="%s" />
+   <input type="hidden" name="signMethod" value="RSA" />
+   <input type="hidden" name="sign" value="%s" />
+   <input type="submit" value="submit" style="display: none;" />
+  </form>
+  <script type="text/javascript">document.forms['linkinsubmit'].submit();</script>
+ </body>
+</html>

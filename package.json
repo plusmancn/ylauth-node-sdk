@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/plusmancn/ylauth-node-sdk#readme",
   "dependencies": {
-    "js-base64": "^2.1.8",
-    "node-rsa": "^0.2.24",
     "request": "^2.58.0"
   },
   "devDependencies": {
